@@ -19,7 +19,20 @@ public class TwoSum {
 }
 class Solution {
     public static int[] twoSum(int[] nums, int target) {
-        int positions[] = new int[2];
+        HashMap<Integer, Integer> positions = new HashMap<>();
+
+        for(int i=0; i < nums.length; i++) {
+            int diff = target - nums[i];
+            if (positions.containsKey(diff)) {
+                return new int[] {positions.get(diff), i};
+            }
+            positions.put(nums[i],i);
+        }
+        return new int[]{};
+
+        /**
+         * My Resolution with 60 / 61 testcases passed
+         * int positions[] = new int[2];
         int sum = -1;
 
         if (sum != target) {
@@ -33,7 +46,6 @@ class Solution {
                 }
             }
         }
-
         for (int i = 0; i < positions.length; i++) {
             if (i == 0) {
                 System.out.print("[" + positions[i] + ",");
@@ -43,7 +55,7 @@ class Solution {
                 System.out.print(positions[i] + "]");
             }
         }
-
         return positions;
+        **/
     }
 }
