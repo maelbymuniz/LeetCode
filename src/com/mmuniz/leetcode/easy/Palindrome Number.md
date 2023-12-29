@@ -1,7 +1,8 @@
 # Palindrome Number
 
 Problem: https://leetcode.com/problems/palindrome-number/
-<p>My solution: 
+<p>My solution: https://github.com/maelbymuniz/LeetCode/blob/main/src/com/mmuniz/leetcode/easy/PalindromeNumber.java </p>>
+
 
 Given an integer x, return true if x is a palindrome, and false otherwise.
 
