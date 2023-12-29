@@ -13,11 +13,11 @@ public class TwoSum {
         int nums[] = {0,4,3,0};
         int target = 0;
 
-        Solution.twoSum(nums, target);
+        TwoSumSolution.twoSum(nums, target);
 
     }
 }
-class Solution {
+class TwoSumSolution {
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> positions = new HashMap<>();
 
@@ -31,7 +31,7 @@ class Solution {
         return new int[]{};
 
         /**
-         * My Resolution with 60 / 61 testcases passed
+         * My first Resolution with 60 / 61 testcases passed
          * int positions[] = new int[2];
         int sum = -1;
 
