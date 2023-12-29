@@ -19,4 +19,11 @@ class PalindromeNumberSolution {
         }
         return false;
     }
+    public static boolean isPalindromeUsingStringBuilder(int x) {
+        String value = String.valueOf(x);
+
+        StringBuilder sb = new StringBuilder(value);
+
+        return sb.reverse().toString().equals(value);
+    }
 }
